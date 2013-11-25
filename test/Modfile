@@ -1,0 +1,23 @@
+// A sample Modfile
+// More info at https://github.com/modulejs/modjs/
+
+module.exports = {
+    plugins: {
+        "optimage": "../index.js"
+    },
+    tasks: {
+        "optimage": {
+            jpg:{
+                src: "./test.jpg",
+                dest: "./test.min.jpg"
+            },
+            png: {
+                src: "./test.png",
+                dest: "./test.min.png"
+            }
+        }
+    },
+    targets: {
+        default: "optimage"
+    }
+};
