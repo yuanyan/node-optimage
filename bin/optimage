@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+'use strict';
+
+var optimage = require('../');
+var argv = process.argv;
+
+var options = {
+    inputFile: argv[3],
+    outputFile: argv[4]
+};
+
+optimage(options, function(err, res){
+    var saved = res.saved;
+    var stderr = res.stderr;
+
+    if (stderr.indexOf('already optimized') !== -1 || saved < 10) {
+        console.log(options.inputFile, "(already optimized)", ">", outputFile);
+    }else{
+        console.log(options.inputFile, "(saved "+ saved+ "Bytes)", ">", outputFile);
+    }
+})
