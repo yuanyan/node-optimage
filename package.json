@@ -1,0 +1,35 @@
+{
+  "name": "optimage",
+  "description": "Image optimizer",
+  "version": "0.1.0",
+  "homepage": "https://github.com/yuanyan/node-optimage",
+  "author": {
+    "name": "yuanyan",
+    "url": "https://github.com/yuanyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuanyan/node-optimage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuanyan/node-optimage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/yuanyan/node-optimage/blob/master/MIT-LICENSE.txt"
+    }
+  ],
+  "bin": "bin/optimage",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "dependencies": {
+    "jpegtran-bin": "~0.2.1",
+    "optipng-bin": "~0.3.1"
+  },
+  "devDependencies": {
+    "modjs": "*"
+  },
+  "keywords": ["png", "jpg", "jpeg", "image"]
+}
