@@ -1,7 +1,7 @@
 node-optimage
 ===
 
-Image optimizer, PNG and JPEG image compress on OS X, Linux, FreeBSD and Windows.
+Image optimizer, PNG, JPEG and GIF image compress on OS X, Linux, FreeBSD and Windows.
 
 ## Install
 

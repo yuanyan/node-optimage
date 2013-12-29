@@ -14,6 +14,10 @@ module.exports = {
             png: {
                 src: "./test.png",
                 dest: "./test.min.png"
+            },
+            gif: {
+                src: “./test.gif”,
+                dest: “./test.min.gif”
             }
         }
     },

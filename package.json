@@ -26,10 +26,11 @@
   },
   "dependencies": {
     "jpegtran-bin": "~0.2.1",
-    "optipng-bin": "~0.3.1"
+    "optipng-bin": "~0.3.1",
+    "gifsicle": "~0.1.4"
   },
   "devDependencies": {
     "modjs": "*"
   },
-  "keywords": ["png", "jpg", "jpeg", "image"]
+  "keywords": ["png", "jpg", "jpeg", "gif", "image"]
 }
