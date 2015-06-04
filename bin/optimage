@@ -14,8 +14,8 @@ optimage(options, function(err, res){
     var stderr = res.stderr;
 
     if (stderr.indexOf('already optimized') !== -1 || saved < 10) {
-        console.log(options.inputFile, "(already optimized)", ">", outputFile);
+        console.log(options.inputFile, "(already optimized)", ">", options.outputFile);
     }else{
-        console.log(options.inputFile, "(saved "+ saved+ "Bytes)", ">", outputFile);
+        console.log(options.inputFile, "(saved "+ saved+ "Bytes)", ">", options.outputFile);
     }
 })
