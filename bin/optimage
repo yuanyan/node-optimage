@@ -5,8 +5,8 @@ var optimage = require('../');
 var argv = process.argv;
 
 var options = {
-    inputFile: argv[3],
-    outputFile: argv[4]
+    inputFile: argv[2],
+    outputFile: argv[3]
 };
 
 optimage(options, function(err, res){
