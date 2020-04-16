@@ -48,7 +48,7 @@ var optimage = module.exports = exports = function (options, done){
             if(options.arg) args = args.concat(options.arg);
             args.push('-outfile', outputFile, inputFile)
             break;
-        
+
         // maybe support to do a merge with frames?
         // that means we need an array for inputOutput.
         case '.gif':
@@ -56,8 +56,10 @@ var optimage = module.exports = exports = function (options, done){
             args.push('-o', outputFile, inputFile, '-O', level||2 );
             if (options.arg) arg = args.concat(options.arg);
             break;
-        
+
         default:
+            // Invoke the callback with a fail message
+            done(new Error('Unable to determine file format'), null);
             return;
     }
 
